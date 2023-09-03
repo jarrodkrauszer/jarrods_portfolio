@@ -1,0 +1,131 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* GLOBAL CLASSES */
+.text-center {
+  text-align: center;
+}
+
+/* CUSTOM STYLES */
+header {
+  background-color: #445db9;
+  padding: 15px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-intro h1 {
+  color: #fff;
+  padding-left: 5px;
+  font-size: 22px;
+  font-family: cursive;
+}
+
+header nav a {
+  padding-bottom: 3px;
+  border-bottom: #FFF solid 2px;
+  transition: all .5s;
+}
+
+header nav a:hover {
+  color: #000;
+  border-color: #000;
+}
+
+header nav a:not(:last-child) {
+  margin-right: 10px;
+  
+}
+
+
+/* HERO STYLES */
+.hero {
+  background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(https://picsum.photos/1200/800);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.hero h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 43px;
+}
+
+.hero p {
+  text-align: center;
+  font-size: 22px;
+}
+
+/* MAIN STYLES */
+main h3 {
+  font-size: 72px;
+  border-right: #000 solid 5px;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+/* ABOUT ME STYLES */
+.about {
+  background-color: #f4f4f4;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  padding: 2rem 0; 
+}
+
+.about p {
+  padding: 0 5rem;
+  text-align: justify;
+  line-height: 1.6rem;
+}
+
+/* PORTFOLIO STYLES */
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  padding: 2rem 0; 
+}
+
+.portfolio h4 {
+  /* color: #fff; */
+  font-size: 28px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 3fr;
+  grid-gap: 1rem;
+  padding: 2rem 2rem; 
+}
+
+.project:first-child {
+  grid-column: 1 / span 2;
+  /* grid-row: 1 / span 3; */
+}
+
+/* CONTACT STYLES */
+.contact {
+  background-color: #f4f4f4;
+}
