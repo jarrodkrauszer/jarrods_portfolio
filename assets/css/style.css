@@ -112,17 +112,32 @@ main h3 {
   font-size: 28px;
 }
 
+/* PROJECT STYLES */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 3fr;
+  /* grid-auto-rows: 1fr; */
   grid-gap: 1rem;
   padding: 2rem 2rem; 
 }
 
+.project {
+  border: #000 solid 8px;
+}
+
 .project:first-child {
   grid-column: 1 / span 2;
-  /* grid-row: 1 / span 3; */
+  grid-row: 1 / span 5;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project img:hover {
+  opacity: 0.7;
 }
 
 /* CONTACT STYLES */
