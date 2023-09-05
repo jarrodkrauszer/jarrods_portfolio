@@ -222,10 +222,10 @@ header nav a:not(:last-child) {
   .contact div a {
     font-size: .75rem;
     border-bottom: #445db9 solid 2px;
-    margin-right: 0;
   }
 
 }
+
 @media screen and (max-width: 1120px) {
   .section-title {
     font-size: 1.5rem;
@@ -235,6 +235,11 @@ header nav a:not(:last-child) {
   .contact div {
     flex-direction: column;
   }
+
+  .contact div a {
+    margin-right: 1.5rem;
+  }
+
 }
 @media screen and (min-width: 601px) and (max-width: 1120px) {
 
