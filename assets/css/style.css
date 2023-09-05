@@ -63,7 +63,7 @@ header nav a:not(:last-child) {
 
 /* HERO STYLES */
 .hero {
-  background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url(https://picsum.photos/id/9/1200/800);
+  background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url(../images/hero.jpeg);
   background-size: cover;
   background-position: center;
   padding: 6rem 0;
