@@ -26,7 +26,7 @@ The following image shows the web application's appearance and functionality:
 
 ![The Jarrod's Portfolio website includes a navigation bar, a header image, a hero section followed by 3 sections of content.](./assets/images/portfolio-page3.png)
 
-![The Jarrod's Portfolio website includes a navigation bar, a header image, a hero section followed by 3 sections of content.](./assets/images/portfolio-page4.png)
+
 
 
 
