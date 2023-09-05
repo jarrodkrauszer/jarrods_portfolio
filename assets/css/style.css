@@ -16,6 +16,13 @@ a {
   text-align: center;
 }
 
+.section-title {
+  font-size: 5rem;
+  border-right: #000 solid 5px;
+  text-align: right;
+  padding-right: 2rem;
+}
+
 /* CUSTOM STYLES */
 header {
   background-color: #445db9;
@@ -73,14 +80,6 @@ header nav a:not(:last-child) {
   font-size: 1.5rem;
 }
 
-/* MAIN STYLES */
-main h3 {
-  font-size: 5rem;
-  border-right: #000 solid 5px;
-  text-align: right;
-  padding-right: 2rem;
-}
-
 /* ABOUT ME STYLES */
 .about {
   background-color: #f4f4f4;
@@ -114,7 +113,6 @@ main h3 {
 
 .project {
   border: #000 solid 9px;
-  /* position: relative; */
 }
 
 .project:first-child {
@@ -132,26 +130,20 @@ main h3 {
   opacity: 0.7;
 }
 
-.project div {
+.project a {
   position: relative;
 }
 
-.project div h4 {
+.project a h4 {
   background-color: #445db9;
   color: #fff;
   height: 4rem;
   width: 8rem;
   position: absolute;
+  left: 0;
+  bottom: 40px;
   padding-top: 1.5rem;
   z-index: 1;
-}
-
-.project:first-child h4 {
-  top: 31rem
-}
-
-.project:not(:first-child) h4 {
-  top: 12.5rem;
 }
 
 /* CONTACT STYLES */
@@ -164,14 +156,95 @@ main h3 {
   align-items: center;
 }
 
-.contact nav a {
+.contact div {
+  display: flex;
+  justify-content: center;
+}
+
+.contact div a {
   color: #445db9;
   font-size: 1.5rem;
   font-weight: bold;
   border-bottom: #445db9 solid 4px;
   padding-bottom: .1rem;
+  transition: all .5s;
 }
 
-.contact nav a:not(:last-child) {
-  margin-right: 1rem;
+.contact div a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.contact div a:hover {
+  color: #eb124c;
+  border-color: #eb124c;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .about p {
+    padding: 0 .5rem;
+    text-align: justify;
+    line-height: 1.6rem;
+  }
+
+  .project:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+  }
+
+  .project:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 7;
+  }
+
+  .project:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 8;
+  }
+
+  .project:nth-child(5) {
+    grid-column: 1 / span 2;
+    grid-row: 9;
+  }
+
+  .project a h4 {
+    font-size: .5rem;
+    height: 1rem;
+    width: 2rem;
+    bottom: 10px;
+    padding: 0 0;
+  }
+
+  .contact div a {
+    font-size: .75rem;
+    border-bottom: #445db9 solid 2px;
+    margin-right: 0;
+  }
+
+}
+@media screen and (max-width: 1120px) {
+  .section-title {
+    font-size: 1.5rem;
+    padding-right: .5rem;
+  }
+  
+  .contact div {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1120px) {
+
+  .project a h4 {
+    font-size: .5rem;
+    height: 2rem;
+    width: 4rem;
+    bottom: 10px;
+    padding: 0 0;
+    padding-top: .75rem;
+  }
+
 }
