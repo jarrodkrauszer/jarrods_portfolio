@@ -13,7 +13,8 @@ Link to deployed code:  https://jarrodkrauszer.github.io/jarrods_portfolio/
  - This is written with HTML5 and CSS 
  - Used flexbox and grid to layout some of the sections
  - Refactored HTML and CSS for responsive design
- - Also used media queries to change the layout at different sizes.
+ - Also used media queries to change the layout at different sizes
+ - Used CSS variables for some of the repeated colors
 
 ## Mock-Up
 
