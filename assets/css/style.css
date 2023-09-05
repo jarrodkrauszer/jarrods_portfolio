@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+  --main-bg-color: #445db9;
+  --secondary-bg-color: #f4f4f4;
+  --contact-hover-color: #eb124c;
+}
+
 /* RESETS */
 * {
   margin: 0;
@@ -25,7 +32,7 @@ a {
 
 /* CUSTOM STYLES */
 header {
-  background-color: #445db9;
+  background-color: var(--main-bg-color);
   padding: 1rem 3%;
   display: flex;
   justify-content: space-between;
@@ -81,7 +88,7 @@ header nav a:not(:last-child) {
 
 /* ABOUT ME STYLES */
 .about {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-bg-color);
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1rem;
@@ -134,7 +141,7 @@ header nav a:not(:last-child) {
 }
 
 .project a h4 {
-  background-color: #445db9;
+  background-color: var(--main-bg-color);
   color: #fff;
   height: 4rem;
   width: 8rem;
@@ -147,7 +154,7 @@ header nav a:not(:last-child) {
 
 /* CONTACT STYLES */
 .contact {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-bg-color);
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1rem;
@@ -161,10 +168,10 @@ header nav a:not(:last-child) {
 }
 
 .contact div a {
-  color: #445db9;
+  color: var(--main-bg-color);
   font-size: 1.5rem;
   font-weight: bold;
-  border-bottom: #445db9 solid 4px;
+  border-bottom: var(--main-bg-color) solid 4px;
   padding-bottom: .1rem;
   transition: all .5s;
 }
@@ -174,8 +181,8 @@ header nav a:not(:last-child) {
 }
 
 .contact div a:hover {
-  color: #eb124c;
-  border-color: #eb124c;
+  color: var(--contact-hover-color);
+  border-color: var(--contact-hover-color);
 }
 
 /* MEDIA QUERIES */
@@ -220,7 +227,7 @@ header nav a:not(:last-child) {
 
   .contact div a {
     font-size: .75rem;
-    border-bottom: #445db9 solid 2px;
+    border-bottom: var(--main-bg-color) solid 2px;
   }
 
 }
