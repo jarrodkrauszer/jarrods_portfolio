@@ -186,7 +186,7 @@ header nav a:not(:last-child) {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   header {
     flex-direction: column;
   }
@@ -232,7 +232,7 @@ header nav a:not(:last-child) {
 
 }
 
-@media screen and (max-width: 1120px) {
+@media (max-width: 1120px) {
   .section-title {
     font-size: 1.5rem;
     padding-right: .5rem;
@@ -247,7 +247,7 @@ header nav a:not(:last-child) {
   }
 
 }
-@media screen and (min-width: 601px) and (max-width: 1120px) {
+@media (min-width: 601px) and (max-width: 1120px) {
 
   .project a h4 {
     font-size: .5rem;
